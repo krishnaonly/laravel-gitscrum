@@ -25,7 +25,7 @@ class AttachmentService
             'filename_new' => $attachmentName,
             'mimetype' => $request->attachment->getMimeType(),
             'size' => $request->attachment->getSize(),
-        ];
+	   ];
 
         $request->attachment->move($this->getAttachmentFolder(), $attachmentName);
 
